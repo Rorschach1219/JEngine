@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3129925901
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c5987162812fca80ad3902ac0ec509b3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/HotUpdateResources/UI/Btn_Back_h.png
+Dependencies: []

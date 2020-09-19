@@ -70,94 +70,94 @@ MonoBehaviour:
     name: small title02_bg.png
   bundles:
   - deps: 
-    hash: 431dd1bd2d9c7c08f73b13fe9971a4f6
+    hash: ece767e94d1e377df9cb8603423c4127
     id: 0
-    len: 12104
+    len: 12102
     name: 10307e2579158266bb48c84de4e31f81.unity3d
   - deps: 
-    hash: 1c65e5bea92df9dd3912f0df086c4569
+    hash: 420e046afb960e4c4559a8ca3dda0547
     id: 1
-    len: 1246
+    len: 1244
     name: 2729121f1447818ebcc32362fa7a845f.unity3d
   - deps: 
-    hash: 2797efbf05992dfa31451c217229fdc5
+    hash: b57860cb27996f4f6cfded1a84530ece
     id: 2
     len: 4080
     name: 27c5099dfaec456da35432abd9e7519f.unity3d
   - deps: 
-    hash: e2b752aaa377cbd82e184e0916786d5d
+    hash: 15f2be6fcc2de0f997d11d7fb0ce34b2
     id: 3
-    len: 131962
+    len: 131961
     name: 2e84f72bca55b4a2664807591fbbfe3c.unity3d
   - deps: 
-    hash: 57e154c750c43f9b68bb947ea8f6ec1d
+    hash: fcf67d31bbfaf809d40b9cf7f97ddf9b
     id: 4
-    len: 509367
+    len: 509365
     name: 2ea539b7e6776608840881784f687b61.unity3d
   - deps: 
-    hash: 011335e28c78e019fc2bcf8cbdb9a93c
+    hash: d093a7717841cc3ba6f56d686ae31f18
     id: 5
-    len: 63032
+    len: 63030
     name: 405201991a9a71af19b75ddc360ad2dd.unity3d
   - deps: 
-    hash: af2ae251b8e68bb817aa130de4a39929
+    hash: 81bf8fa4e0ac384dcd97175bdffcba21
     id: 6
-    len: 35914
+    len: 35913
     name: 4ff9b922316f65b7af5caa11c61a61fe.unity3d
   - deps: 
-    hash: c3b1b1cf4ca5b148e51e26cc763b50fa
+    hash: 48fbe86cc73ae07feeccb60f0a41d3ed
     id: 7
-    len: 625695
+    len: 625696
     name: 56a148f67bbba8d1c2e1cab4e8e73500.unity3d
   - deps: 
-    hash: 50d65815e49352af691206e6993489fe
+    hash: 300e19a225c449efd1f9a5cbfe520290
     id: 8
-    len: 4600
+    len: 4601
     name: 582d81dd23ce97cbefd9f25233498fe3.unity3d
   - deps: 
-    hash: 4343336ab3a4fd188a305d72971e82ac
+    hash: b99d9f112324382c787381e903d00ebf
     id: 9
-    len: 20084
+    len: 20080
     name: 643866ffc58d995dc55ac0c622318aed.unity3d
   - deps: 
-    hash: eba6d0bb5445db6641bb8955e29125ac
+    hash: 6bfa8e74a3227218914fef5f8ddc920f
     id: 10
-    len: 401710
+    len: 401709
     name: 7f29c2d974928b09cb4ca9c6e4ba1bee.unity3d
   - deps: 
-    hash: 04a396778582647234de86cdfe046b81
+    hash: 0191973a699af108da05e6196dddc286
     id: 11
-    len: 40339
+    len: 40336
     name: 985692b6599af4825887201642c1fc54.unity3d
   - deps: 
-    hash: e89fb88a1159d296ca1a51e76ae7b89f
+    hash: e855ed72e2def1dd1c9a2b149095ae16
     id: 12
-    len: 81130
+    len: 81132
     name: 989028c25bfff14113e19b6f721808e8.unity3d
   - deps: 
-    hash: 928038a2847e8235d316087cc2a57778
+    hash: c63d44ba1c68a2bb99369855c8e4078a
     id: 13
-    len: 498200
+    len: 498196
     name: 99e969c8b6bdaeaf6012f9c767df7903.unity3d
   - deps: 020000000600000007000000080000000a0000000b0000000c00000010000000
-    hash: 9bee2599b91aab9c2037584ce728ba1d
+    hash: 3f5f830eed37e14835d12271294ab6e4
     id: 14
-    len: 43800
+    len: 32153
     name: ceddc0c9b3c8bf92a5649c7282074eed.unity3d
   - deps: 
-    hash: 03c0213ba0a5b615ceb5757ce1594392
+    hash: c5987162812fca80ad3902ac0ec509b3
     id: 15
-    len: 7866
+    len: 7867
     name: ed4e8e2a86549760785bda16bd4be410.unity3d
   - deps: 
-    hash: e5244ae6d9a956d008b228bc8b81e25b
+    hash: ba343b7e0d7751ee651c6f8e803aee22
     id: 16
-    len: 129517
+    len: 129515
     name: f027f62d736f2b9930b079d86f3b90c2.unity3d
   - deps: 
-    hash: 9027c8f2dc322e85d594046a9fa5df59
+    hash: 5f66b2cc11a59d18dddfce6b7b9bccb1
     id: 17
-    len: 33547
+    len: 33971
     name: f1e9148d33abaae32bb165f217c22e91.unity3d
   dirs:
   - Assets/HotUpdateResources/Dll

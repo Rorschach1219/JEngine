@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3679045735
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d093a7717841cc3ba6f56d686ae31f18
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9e6ad29cbd2df8fbe1a15315db0e51ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/HotUpdateResources/UI/Btn_Title_p.png
+Dependencies: []

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81c03b3d-4856-4098-b544-fb4cb76c9fab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotUpdateScripts/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotUpdateScripts/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotUpdateScripts/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotUpdateScripts/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotUpdateScripts/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/CLRBindings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/CLRBindings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/CLRBindings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/CLRBindings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/JEngine_Core_Log_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/JEngine_Core_Log_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Action_1_MonoBehaviourAdapter_Binding_Adaptor_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Action_1_MonoBehaviourAdapter_Binding_Adaptor_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Action_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Action_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Action_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Action_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Func_1_Boolean.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Func_1_Boolean.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Single_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Int32_Single_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Type_UIBehaviour_Bin.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_Dictionary_2_Type_UIBehaviour_Bin.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_List_1_Action_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_List_1_Action_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_List_1_GameObject_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Collections_Generic_List_1_GameObject_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Func_1_Boolean_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Func_1_Boolean_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Int32_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Int32_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Int32_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Int32_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Object_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Object_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Object_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Object_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_ILT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_ILT.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_ILT.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_ILT.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Bindi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Bindi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Bindi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Bindi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Bindi.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Bindi.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_TaskAwaiter_1_ILTypeInstance.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_TaskAwaiter_1_ILTypeInstance.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_TaskAwaiter_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Runtime_CompilerServices_TaskAwaiter_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_String_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_String_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_String_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_String_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_CancellationTokenSource_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_CancellationTokenSource_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_1_ILTypeInstance_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_1_ILTypeInstance_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Threading_Tasks_Task_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_TimeoutException_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_TimeoutException_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Type_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/System_Type_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Application_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Application_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Application_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Application_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Color_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Color_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Component_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Component_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Events_UnityEvent_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Events_UnityEvent_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_GameObject_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_GameObject_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_GameObject_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_GameObject_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Object_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Object_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Object_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Object_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_RectTransform_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_RectTransform_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Resources_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Resources_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Screen_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Screen_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_TextAsset_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_TextAsset_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Time_Binding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Time_Binding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Time_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Time_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Transform_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Transform_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Button_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Button_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Graphic_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Graphic_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Text_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_UI_Text_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Vector2_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/UnityEngine_Vector2_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/libx_AssetRequest_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/libx_AssetRequest_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/libx_Assets_Binding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/ILRuntime/Generated/libx_Assets_Binding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Dependencies/JEngine/Core/StringifyHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Dependencies/JEngine/Core/StringifyHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Dll/HotUpdateScripts.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Dll/HotUpdateScripts.bytes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Dll/HotUpdateScripts.bytes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Dll/HotUpdateScripts.bytes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/HotUpdateResources/Scene/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/HotUpdateScripts/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/HotUpdateScripts/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/AutoBindDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/AutoBindDemo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotUpdateScripts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HotUpdateScripts.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/HotUpdateScripts.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/HotUpdateScripts.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ILRuntime.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ILRuntime.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Malee.ReorderableList.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Malee.ReorderableList.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Malee.ReorderableList.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Malee.ReorderableList.csproj" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Examples/DataClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Examples/ExcelTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Examples/JBehaviourExample.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Examples/ExcelTest.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hV9hjbzUkjA90uB9CupKq1OhBH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81c03b3d-4856-4098-b544-fb4cb76c9fab" name="Default Changelist" comment="" />
+      <created>1600085513718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600085513718</updated>
+      <workItem from="1600085514977" duration="2062000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

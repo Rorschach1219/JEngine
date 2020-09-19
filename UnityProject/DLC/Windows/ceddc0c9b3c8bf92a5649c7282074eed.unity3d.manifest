@@ -1,0 +1,84 @@
+ManifestFileVersion: 0
+CRC: 1119157742
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3f5f830eed37e14835d12271294ab6e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d6c63515fb87e0831724a8cdcc2147d7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 136c8f5360d9a4f13a42b9b074fc8038, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/HotUpdateResources/Scene/Game.unity
+Dependencies:
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/f027f62d736f2b9930b079d86f3b90c2.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/56a148f67bbba8d1c2e1cab4e8e73500.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/7f29c2d974928b09cb4ca9c6e4ba1bee.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/27c5099dfaec456da35432abd9e7519f.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/4ff9b922316f65b7af5caa11c61a61fe.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/985692b6599af4825887201642c1fc54.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/989028c25bfff14113e19b6f721808e8.unity3d
+- D:/Workspace/Unity3D/JEngine/UnityProject/DLC/Windows/582d81dd23ce97cbefd9f25233498fe3.unity3d

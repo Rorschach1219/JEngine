@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\公子扶苏\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\公子扶苏\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_HotUpdateScripts.554694795.00" t="ExcludeRecursive" />
+    <e p="D:\Workspace\Unity3D\JEngine\UnityProject\Assets\HotUpdateResources\Dll\Hidden~" t="ExcludeRecursive" />
+    <e p="D:\Workspace\Unity3D\JEngine\UnityProject\HotUpdateScripts" t="IncludeRecursive">
+      <e p="Examples" t="Include">
+        <e p="AutoBindDemo.cs" t="Include" />
+        <e p="DataClass.cs" t="Include" />
+        <e p="JBehaviourExample.cs" t="Include" />
+        <e p="JSaverExample.cs" t="Include" />
+        <e p="JUIExample.cs" t="Include" />
+      </e>
+      <e p="HotUpdateScripts.csproj" t="IncludeRecursive" />
+      <e p="HotUpdateScripts.sln" t="IncludeFlat" />
+      <e p="JEngine" t="Include">
+        <e p="3rdParty" t="Include">
+          <e p="Loom.cs" t="Include" />
+        </e>
+        <e p="Core" t="Include">
+          <e p="BindableProperty.cs" t="Include" />
+          <e p="JAction.cs" t="Include" />
+          <e p="JBehaviour.cs" t="Include" />
+          <e p="JObjectPool.cs" t="Include" />
+          <e p="JResource.cs" t="Include" />
+          <e p="JSaver.cs" t="Include" />
+          <e p="JUI.cs" t="Include" />
+          <e p="ProtoTypeRegister.cs" t="Include" />
+          <e p="StringifyHelper.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Proto2cs" t="Include" />
+    </e>
+  </component>
+</project>
