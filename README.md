@@ -199,11 +199,12 @@ Please clone this framework into your project and keep this directory structure
 
 - [XAsset](https://github.com/xasset/xasset) - A more streamlined, efficient and secure Unity Resource Management Solution for you.
 - [IFramework](https://github.com/OnClick9927/IFramework) - Simple Unity Tools
-
+- [QFramework](https://github.com/liangxiegame/QFramework) - Your first K.I.S.S Unity 3D Framework.
 
 
 ## Sincerely Appreciated
 
 - Ekson (Sponsorship)
 - 程序-华仔 (Sponsorship)
-
+- 默默的奶爸 (Sponsorship + Promote)
+- 马三 (Sponsorship)
