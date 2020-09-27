@@ -27,7 +27,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using JEngine.ThridParty;
 using UnityEngine;
 
 namespace JEngine.Core
@@ -139,7 +138,7 @@ namespace JEngine.Core
 
         public JAction Execute(bool onMainThread = false)
         {
-            if (_executing == true)
+            if (_executing == true && !_parallel)
             {
                 Log.PrintError("JAction is currently executing, if you want to execute JAction multiple times at the same time, call Parallel() before calling Execute()");
             }
@@ -152,13 +151,13 @@ namespace JEngine.Core
 
         public JAction ExecuteAsync(Action callback = null, bool onMainThread = false)
         {
-            _ = _ExecuteAsync(callback,onMainThread);
+            _ = _ExecuteAsync(callback, onMainThread);
             return this;
         }
 
         private async Task<JAction> _ExecuteAsync(Action callback, bool onMainThread)
         {
-            if (_executing == true)
+            if (_executing == true && !_parallel)
             {
                 Log.PrintError("JAction is currently executing, if you want to execute JAction multiple times at the same time, call Parallel() before calling ExecuteAsync()");
             }
@@ -267,7 +266,10 @@ namespace JEngine.Core
                         {
                             await Task.Run(() =>
                             {
-                                Loom.QueueOnMainThread(_action);
+                                Loom.QueueOnMainThread(p =>
+                                {
+                                    _action();
+                                }, null);
                             }, _cancellationTokenSource.Token);
                         }
                         else
@@ -288,7 +290,10 @@ namespace JEngine.Core
                     {
                         await Task.Run(() =>
                         {
-                            Loom.QueueOnMainThread(_toDo[index]);
+                            Loom.QueueOnMainThread(p =>
+                            {
+                                _toDo[index]();
+                            }, null);
                         }, _cancellationTokenSource.Token);
                     }
                     else
