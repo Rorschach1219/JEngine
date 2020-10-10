@@ -140,27 +140,41 @@ namespace libx
             return rule;
         }
 
-        public static void CopyAssetBundlesTo (string path)
+        public static void CopyAssetBundlesTo (string path, bool vfs = true)
         {
-            var files = new[] {
-                Versions.Dataname,
-                Versions.Filename,
-            };  
+#if UNITY_IPHONE
+                vfs = false;
+#endif
+            
             if (!Directory.Exists (path)) {
                 Directory.CreateDirectory (path);
+            } 
+            
+            var versions = new List<VFile>(); 
+            
+            if (! vfs)
+            { 
+                versions.AddRange(Versions.LoadVersions(outputPath + "/" + Versions.Filename));
+                versions.Add(new VFile() { name = Versions.Filename });
+                versions.RemoveAt(versions.FindIndex(file => file.name.Equals(Versions.Dataname)));  
             }
-
-            foreach (var item in files)
+            else
             {
-                var src = outputPath + "/" + item;
-                var dest = Application.streamingAssetsPath + "/" + item;
-
+                versions.Add(new VFile() { name = Versions.Filename });
+                versions.Add(new VFile() { name = Versions.Dataname }); 
+            } 
+            
+            foreach (var item in versions)
+            {
+                var src = outputPath + "/" + item.name;
+                var dest = path + "/" + item.name; 
                 if (File.Exists(src))
                 {
                     File.Copy(src, dest, true);
                 }
-            }
-        
+            }  
+            
+            AssetDatabase.Refresh();
         }
 
         public static string GetPlatformName()

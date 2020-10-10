@@ -66,8 +66,8 @@ MonoBehaviour:
     path: Assets/HotUpdateResources/Other/impact.ttf
   - bundle: ceddc0c9b3c8bf92a5649c7282074eed.unity3d
     path: Assets/HotUpdateResources/Scene/Game.unity
-  - bundle: 2729121f1447818ebcc32362fa7a845f.unity3d
-    path: Assets/HotUpdateResources/TextAsset/Text.txt
+  - bundle: 6409362d6eb671d168aa187271cd33a8.unity3d
+    path: Assets/HotUpdateResources/TextAsset/Localization.csv
   - bundle: ed4e8e2a86549760785bda16bd4be410.unity3d
     path: Assets/HotUpdateResources/UI/Btn_Back_h.png
   - bundle: 4ff9b922316f65b7af5caa11c61a61fe.unity3d
@@ -94,6 +94,10 @@ MonoBehaviour:
     path: Assets/HotUpdateResources/UI/bg_GoodsTitle.png
   - bundle: 27c5099dfaec456da35432abd9e7519f.unity3d
     path: Assets/HotUpdateResources/UI/bg_Input0_n.png
+  - bundle: 756e824e3c396004946abce0dfb24f39.unity3d
+    path: Assets/HotUpdateResources/UI/bg_Title1.png
+  - bundle: 34cd07c7b5050c4125779e8fc1682aa7.unity3d
+    path: Assets/HotUpdateResources/UI/bg_Title2 .png
   - bundle: 10307e2579158266bb48c84de4e31f81.unity3d
     path: Assets/HotUpdateResources/UI/small title02_bg.png
   ruleBundles:
@@ -106,27 +110,9 @@ MonoBehaviour:
   - name: ceddc0c9b3c8bf92a5649c7282074eed.unity3d
     assets:
     - Assets/HotUpdateResources/Scene/Game.unity
-  - name: 2729121f1447818ebcc32362fa7a845f.unity3d
+  - name: 6409362d6eb671d168aa187271cd33a8.unity3d
     assets:
-    - Assets/HotUpdateResources/TextAsset/Text.txt
-  - name: 56a148f67bbba8d1c2e1cab4e8e73500.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/background1.png
-  - name: 7f29c2d974928b09cb4ca9c6e4ba1bee.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/background4.png
-  - name: 2ea539b7e6776608840881784f687b61.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/background4_v2.png
-  - name: 99e969c8b6bdaeaf6012f9c767df7903.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/background5_v2.png
-  - name: 643866ffc58d995dc55ac0c622318aed.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/bg_GoodsTitle.png
-  - name: 27c5099dfaec456da35432abd9e7519f.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/bg_Input0_n.png
+    - Assets/HotUpdateResources/TextAsset/Localization.csv
   - name: ed4e8e2a86549760785bda16bd4be410.unity3d
     assets:
     - Assets/HotUpdateResources/UI/Btn_Back_h.png
@@ -145,9 +131,33 @@ MonoBehaviour:
   - name: 582d81dd23ce97cbefd9f25233498fe3.unity3d
     assets:
     - Assets/HotUpdateResources/UI/Icon_Back1.png
-  - name: 10307e2579158266bb48c84de4e31f81.unity3d
-    assets:
-    - Assets/HotUpdateResources/UI/small title02_bg.png
   - name: 2e84f72bca55b4a2664807591fbbfe3c.unity3d
     assets:
     - Assets/HotUpdateResources/UI/Title2_bg.png
+  - name: 56a148f67bbba8d1c2e1cab4e8e73500.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/background1.png
+  - name: 7f29c2d974928b09cb4ca9c6e4ba1bee.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/background4.png
+  - name: 2ea539b7e6776608840881784f687b61.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/background4_v2.png
+  - name: 99e969c8b6bdaeaf6012f9c767df7903.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/background5_v2.png
+  - name: 643866ffc58d995dc55ac0c622318aed.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/bg_GoodsTitle.png
+  - name: 27c5099dfaec456da35432abd9e7519f.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/bg_Input0_n.png
+  - name: 756e824e3c396004946abce0dfb24f39.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/bg_Title1.png
+  - name: 34cd07c7b5050c4125779e8fc1682aa7.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/bg_Title2 .png
+  - name: 10307e2579158266bb48c84de4e31f81.unity3d
+    assets:
+    - Assets/HotUpdateResources/UI/small title02_bg.png

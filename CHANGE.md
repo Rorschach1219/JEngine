@@ -1,5 +1,27 @@
 ## All Versions
 
+### v0.5.4 (October 10 2020)
+
+- **Anti-Cheat Structs** allows detect hackers who hacks your game
+- **ClassBind improvements** more friendly to update from old versions to latests
+
+
+
+### v0.5.3 (October 6 2020) (Support by XAsset's Author)
+
+- Supports **copy DLC files to Streaming Assets**, which can pass App Store review easier
+- Supports **move local Streaming Asstes hot update resouces to persistence path** which user don't need to download any old things from server
+
+
+
+### v0.5.2 (October 1 2020)
+
+- **Anti-Cheat Structs** which prevents cheating tools change data stores in memory
+  - **Drag 'n drop** on Class Bind
+  - **LitJSON Serialize and Desirialize Float**
+
+
+
 ### v0.5.1 (Sepetember 26 2020)
 
 - **Localization** supports multiple languages in your game
