@@ -1,4 +1,4 @@
-# JENGINE v0.5.5
+# JENGINE v0.5.7
 
 JEngine is a **streamlined** and **easy-to-use** framework designed for **Unity Programmers** which contains **powerful features**, beginners can **start up quickly and making hot update-able games easily**
 
@@ -54,11 +54,12 @@ JEngine is a **streamlined** and **easy-to-use** framework designed for **Unity 
     - **UI can be binded to a data**, once data  has changed, it will call the method that you has binded
     
   
-- **[Behaviour](Docs/en-us/JBehaviour.md)** based on MonoBehaviour
+- **[Behaviour](Docs/en-us/JBehaviour.md)** base class
 
-  - **More friendly to manage lifecycle**
-
-    - You can make loop easier using JEngine
+  - **Easy to manager **life cycle
+  - Can choose **Loop in frame** or **Loop in milliseconds **
+  - **No need of MonoBehaviour**
+  - **Easy to use**
 
 - **[Resource Management](Docs/en-us/JResource.md)** based on XAsset
 
@@ -104,11 +105,10 @@ JEngine has its own purpose to help developers **write powerful codes which are 
 
 ## Latest Features
 
-- **ClassBind** allows auto **attach any class** to a GameObject
-- **ClassBind** allows use **consturcor** as a initial of fields of a class
-- **ClassBind** allows call ```Active()``` method whether the bound class inherited MonoBehaviour or JBehaviour or not
-- **Editor** for **Hot Update Scripts to GameObject** supports present **more stuffs**
-- **Demo** for using **AntiCheat Struct** & **Bindable Property** improves
+- **JBehaviour** got rid of MonoBehaviour, a significant increasement of performance has been developed
+- **JUI** got rid of MonoBehaviour
+- **Register Helper** for CLR Method Redirection
+- **ClassBind** enhancement
 
 [Click here to see all version updates](CHANGE.md)
 
@@ -119,7 +119,7 @@ JEngine has its own purpose to help developers **write powerful codes which are 
 - ~~Supports local hot-update resources development in Unity Editor (Done)~~
 - ~~Encrypt Hot-update DLL and decrypt in runtime~~
 - ~~Object Pool which significantly improves performance rather than using Instantiate method~~
-- JPrefab, a better way to manage Prefab from Resources
+- ~~JPrefab, a better way to manage Prefab from Resources~~
 - JUI with more extended APIs
 - UI Special Effects
 - Optiimize logics which can improve process speed (As always doing it)
@@ -188,3 +188,4 @@ Please clone this framework into your project and keep this directory structure
 - 程序-华仔 (Sponsorship)
 - 默默的奶爸 (Sponsorship + Promote)
 - 马三 (Sponsorship)
+- 清行（Documents）
