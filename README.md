@@ -1,6 +1,10 @@
-# JENGINE v0.5.7
+# JENGINE v0.5.x LTS
 
 JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强大的功能，小白也能**快速上手**，**轻松制作**可以**热更新的游戏**
+
+该分支是```v0.5```系列分支，是一个长期支持（**LTS**）版本，虽然**已不再继续更新**新功能，**但会修复Bug**，欢迎**PR**和提交**issue**
+
+**注意：**如果```Instantiate```，```SendMessage```等方法出现错误，是CLR重定向没有实现，需要学习ILRuntime去自己实现，也可以更新最新分支（0.6.x就已经实现了）
 
 ![topLanguage](https://img.shields.io/github/languages/top/JasonXuDeveloper/JEngine)
 ![size](https://img.shields.io/github/languages/code-size/JasonXuDeveloper/JEngine)
@@ -79,15 +83,12 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
     - 支持**同步/异步加载**资源
     - **泛型**方法，轻松使用
     - **异步加载**热更**场景**
-    - 获取场景加载进度
-    - 智能匹配
-
+    
 - **[自动绑定热更脚本到GameObject](https://github.com/JasonXuDeveloper/JEngine/wiki/代码绑定)**
-
-  - 热更工程脚本想添加到GameObject太复杂？一个脚本，直接搞定！
   - 输入命名空间，类名，即可**自动绑定**热更脚本**至物体**
   - 可对**该脚本public/private/static数值进行赋值**
-  - **支持拖拽赋值**
+  - **特殊类型支持拖拽赋值**
+  - **不需要是Mono类**
 
 - **[数据持久化解决方案](https://github.com/JasonXuDeveloper/JEngine/wiki/JSaver教程)**
 
@@ -105,32 +106,32 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
 
 - **[内存加密解决方案](https://github.com/JasonXuDeveloper/JEngine/wiki/内存加密结构)**
 
-  - 支持90%数值类型
-  - 偏移值加密
-  - 转JSON和Protobuf于普通数据结构一样
+  - 支持**90%数值类型**
+  - **偏移值**加密
+  - **转JSON和Protobuf**于**普通数据结构一样**
+  - 可以**捕获内存作弊**
 
 - **对象池**解决方案
 
   - 大幅度提升性能及减少内存开销，相比于常规Instantiate操作
   - **无需重复**创建新对象！
   - **智能算法**，贪心算法匹配GameObject，对象池满可自动添加！
-  - 简单友好
-
+  
 - **加密解密**解决方案
 
-  - AES加密
-  - 支持字符串
-  - 支持二进制
+  - **AES**加密
+  - 支持**字符串**
+  - 支持**二进制**
 
 - **序列化**解决方案
 
-  - 转String
-  - 转JSON
-  - 转Protobuf-net二进制
+  - 转**String**
+  - 转**JSON**
+  - 转**Protobuf-net**二进制
 
 - 面板类
-  - ILRuntime适配器自动生成
-  - Protobfuf文件转CS
+  - **ILRuntime适配器自动生成**
+  - **Protobfuf文件与CS类互转**
 
   - 还有更多功能，尽情自行探索！
 
@@ -148,15 +149,21 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
 
 
 
-## 最新功能
+## v0.5.8 最新功能
 
-- **JBehaviour** 脱离了MonoBehaviour，极大幅度的提高了性能，却保留了Mono方便管理的特性，同时可以被添加到GameObject，支持可视化管理等
+- **Bug修复** 当复制streaming asset时安卓可能会出现错误
 
-- **JUI** 脱离了MonoBehaviour，极大幅度的提高了性能
+- **C# type 转 Proto 文件** 转换器
 
-- **CLR方法重定向助手** 提供了定位Log
+- **重新排序** 菜单栏
 
-- **自动绑定** 优化
+- **优化** 自动绑定
+
+- **更高级的** JBehaviour编辑器
+
+- **JBehaviour** 支持通过 ```new()```创建对象
+
+- **BindableProperty** 支持绑定多个事件（被多个值绑定）
 
   [点击此处查看历史版本功能（英文）](CHANGE.md)
 
@@ -176,34 +183,6 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
 
 
 
-## 目录结构（重要）
-
-请Clone该项目并保持Project目录结构
-
-```
-.
-├── Assets
-│   ├── Dependencies
-│   ├── HotUpdateResources
-│   │   ├── Controller
-│   │   ├── Dll
-│   │   ├── Material
-│   │   ├── Other
-│   │   ├── Prefab
-│   │   ├── Scene
-│   │   ├── ScriptableObject
-│   │   ├── TextAsset
-│   │   └── UI
-│   ├── Init.unity
-│   └── Scripts
-│       ├── Init.cs
-│       ├── InitILrt.cs
-│       └── APIs
-├── Builds
-├── DLC
-├── HotUpdateScrpts
-```
-
 ## JEngine热更逻辑
 
 ![flowchart](https://s1.ax1x.com/2020/09/06/wenIpV.png)
@@ -216,7 +195,7 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
 
 - U3D工程.net环境： .net 4.x
 
-- 热更工程.net环境： .net 2.0 standard
+- 热更工程.net环境： .net 4.x
 
 - 开发系统：MacOS 10.15.5
 
@@ -239,3 +218,4 @@ JEngine是针对Unity开发者设计的**开箱即用**的框架，封装了强�
 - 默默的奶爸（赞助+宣传推广）
 - 马三（赞助）
 - 清行（文档）
+- 阿飞（赞助）

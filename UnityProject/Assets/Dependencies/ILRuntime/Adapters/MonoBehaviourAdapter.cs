@@ -1,13 +1,9 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-using ILRuntime.Other;
-using System;
-using System.Collections;
-using System.Reflection;
+﻿using System;
+using ILRuntime.CLR.Method;
 using ILRuntime.Runtime.Enviorment;
 using ILRuntime.Runtime.Intepreter;
-using ILRuntime.CLR.Method;
-using JEngine.Core;
+using UnityEngine;
+using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 
 public class MonoBehaviourAdapter : CrossBindingAdaptor
 {
@@ -27,7 +23,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         }
     }
 
-    public override object CreateCLRInstance(ILRuntime.Runtime.Enviorment.AppDomain appdomain, ILTypeInstance instance)
+    public override object CreateCLRInstance(AppDomain appdomain, ILTypeInstance instance)
     {
         return new Adaptor(appdomain, instance);
     }
@@ -35,16 +31,17 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
     public class Adaptor : MonoBehaviour, CrossBindingAdaptorType
     {
         ILTypeInstance instance;
-        ILRuntime.Runtime.Enviorment.AppDomain appdomain;
+        AppDomain appdomain;
 
-        public bool isJBehaviour = false;
+        public bool isJBehaviour;
+        public bool isMonoBehaviour = true;
 
         public Adaptor()
         {
 
         }
 
-        public Adaptor(ILRuntime.Runtime.Enviorment.AppDomain appdomain, ILTypeInstance instance)
+        public Adaptor(AppDomain appdomain, ILTypeInstance instance)
         {
             this.appdomain = appdomain;
             this.instance = instance;
@@ -52,12 +49,13 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
 
         public ILTypeInstance ILInstance { get { return instance; } set { instance = value; } }
 
-        public ILRuntime.Runtime.Enviorment.AppDomain AppDomain { get { return appdomain; } set { appdomain = value; } }
+        public AppDomain AppDomain { get { return appdomain; } set { appdomain = value; } }
 
         object[] param0 = new object[0];
         
         IMethod mAwakeMethod;
         bool mAwakeMethodGot;
+        private bool awaked = false;
         public void Awake()
         {
             //Unity会在ILRuntime准备好这个实例前调用Awake，所以这里暂时先不掉用
@@ -72,6 +70,8 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
                 if (mAwakeMethod != null)
                 {
                     appdomain.Invoke(mAwakeMethod, instance, param0);
+                    awaked = true;
+                    OnEnable();
                 }
             }
         }
@@ -80,7 +80,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mStartMethodGot;
         void Start()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mStartMethodGot)
             {
@@ -98,7 +98,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mUpdateMethodGot;
         void Update()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mUpdateMethodGot)
             {
@@ -117,7 +117,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mFixedUpdateMethodGot;
         void FixedUpdate()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mFixedUpdateMethodGot)
             {
@@ -135,7 +135,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mLateUpdateMethodGot;
         void LateUpdate()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mLateUpdateMethodGot)
             {
@@ -153,7 +153,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnEnableMethodGot;
         void OnEnable()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (instance != null)
             {
@@ -163,7 +163,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
                     mOnEnableMethodGot = true;
                 }
 
-                if (mOnEnableMethod != null)
+                if (mOnEnableMethod != null && awaked)
                 {
                     appdomain.Invoke(mOnEnableMethod, instance, param0);
                 }
@@ -174,7 +174,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnDisableMethodGot;
         void OnDisable()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (instance != null)
             {
@@ -195,7 +195,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mDestroyMethodGot;
         void OnDestroy()
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mDestroyMethodGot)
             {
@@ -213,7 +213,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnTriggerEnterMethodGot;
         void OnTriggerEnter(Collider other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnTriggerEnterMethodGot)
             {
@@ -231,7 +231,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnTriggerStayMethodGot;
         void OnTriggerStay(Collider other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnTriggerStayMethodGot)
             {
@@ -249,7 +249,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnTriggerExitMethodGot;
         void OnTriggerExit(Collider other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnTriggerExitMethodGot)
             {
@@ -267,7 +267,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnCollisionEnterMethodGot;
         void OnCollisionEnter(Collision other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnCollisionEnterMethodGot)
             {
@@ -285,7 +285,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnCollisionStayMethodGot;
         void OnCollisionStay(Collision other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnCollisionStayMethodGot)
             {
@@ -303,7 +303,7 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
         bool mOnCollisionExitMethodGot;
         void OnCollisionExit(Collision other)
         {
-            if (isJBehaviour) return;
+            if (isJBehaviour || !isMonoBehaviour) return;
             
             if (!mOnCollisionExitMethodGot)
             {
@@ -324,8 +324,8 @@ public class MonoBehaviourAdapter : CrossBindingAdaptor
             {
                 return instance.ToString();
             }
-            else
-                return instance.Type.FullName;
+
+            return instance.Type.FullName;
         }
     }
 }

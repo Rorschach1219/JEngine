@@ -25,6 +25,8 @@
 // THE SOFTWARE.
 using libx;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using Malee.List;
 using System.Linq;
 using System.Reflection;
@@ -33,6 +35,8 @@ using ILRuntime.CLR.TypeSystem;
 using ILRuntime.Runtime.Intepreter;
 using ProjectAdapter;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Component = UnityEngine.Component;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -73,6 +77,13 @@ namespace JEngine.Core
             Destroy(cb);
         }
 
+        public static List<T> FindObjectsOfTypeAll<T>()
+        {
+            return SceneManager.GetActiveScene().GetRootGameObjects()
+                .SelectMany(g => g.GetComponentsInChildren<T>(true))
+                .ToList();
+        }
+        
         public string AddClass(_ClassBind _class)
         {
             //添加脚本
@@ -90,16 +101,32 @@ namespace JEngine.Core
                 
                 
                 
-                
             //JBehaviour需自动赋值一个值
             var JBehaviourType = Init.appdomain.LoadedTypes["JEngine.Core.JBehaviour"];
             bool isJBehaviour = t.IsSubclassOf(JBehaviourType.ReflectionType);
+            bool isMono = t.IsSubclassOf(typeof(MonoBehaviour));
+            
+            if (_class.UseConstructor && isMono)
+            {
+                JEngine.Core.Log.PrintWarning($"{t.FullName}由于带构造函数生成，会有来自Unity的警告，请忽略");
+
+            }
 
             var clrInstance = this.gameObject.AddComponent<MonoBehaviourAdapter.Adaptor>();
             clrInstance.enabled = false;
             clrInstance.ILInstance = instance;
             clrInstance.AppDomain = Init.appdomain;
-            instance.CLRInstance = clrInstance;
+            if (isMono)
+            {
+                instance.CLRInstance = clrInstance;
+            }
+            else
+            {
+                instance.CLRInstance = instance;
+            }
+            
+            //判断类型
+            clrInstance.isMonoBehaviour = isMono;
             
             if (isJBehaviour)
             {
@@ -117,6 +144,7 @@ namespace JEngine.Core
                 foreach (_ClassField field in fields)
                 {
                     object obj = new object();
+
                     try
                     {
                         if (field.fieldType == _ClassField.FieldType.Short)
@@ -175,7 +203,7 @@ namespace JEngine.Core
                             obj = field.value == "true";
                             _class.BoundData = true;
                         }
-                        else if (field.fieldType == _ClassField.FieldType.GameObject)
+                        if (field.fieldType == _ClassField.FieldType.GameObject)
                         {
                             GameObject go = field.gameObject;
                             if (go == null)
@@ -272,6 +300,43 @@ namespace JEngine.Core
                                     }
                                 }
                             }
+                            else
+                            {
+                                var pi = t.GetProperty(field.fieldName,
+                                    BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance |
+                                    BindingFlags.Static);
+                                if (pi != null)
+                                {
+                                    string tName = pi.PropertyType.Name;
+                                    if (pi.PropertyType.Assembly.ToString().Contains("ILRuntime")) //如果在热更中
+                                    {
+                                        var components = go.GetComponents<MonoBehaviourAdapter.Adaptor>();
+                                        foreach (var c in components)
+                                        {
+                                            if (c.ILInstance.Type.Name == tName)
+                                            {
+                                                obj = c.ILInstance;
+                                                _class.BoundData = true;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        var component = go.GetComponents<Component>().ToList()
+                                            .Find(c => c.GetType().ToString().Contains(tName));
+                                        if (component != null)
+                                        {
+                                            obj = component;
+                                            _class.BoundData = true;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    Log.PrintError($"自动绑定{this.name}出错：{classType}.{field.fieldName}赋值出错：{field.fieldName}不存在");
+                                }
+                            }
                         }
                         else if (field.fieldType == _ClassField.FieldType.HotUpdateResource)
                         {
@@ -325,10 +390,9 @@ namespace JEngine.Core
             //是否激活
             if (_class.ActiveAfter)
             {
-                if (_class.BoundData == false && _class.RequireBindFields)
+                if (_class.BoundData == false && _class.RequireBindFields && _class.Fields.Count > 0)
                 {
-                    Log.PrintError($"自动绑定{this.name}出错：{classType}没有成功绑定数据，无法自动激活，请手动！");
-                    return null;
+                    Log.PrintError($"自动绑定{this.name}出错：{classType}没有成功绑定数据，自动激活成功，但可能会抛出空异常！");
                 }
 
                 clrInstance.enabled = true;

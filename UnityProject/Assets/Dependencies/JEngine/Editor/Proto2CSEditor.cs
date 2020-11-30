@@ -1,5 +1,5 @@
 ﻿//
-// ProtoGenEditor.cs
+// Proto2CSEditor.cs
 //
 // Author:
 //       JasonXuDeveloper（傑） <jasonxudeveloper@gmail.com>
@@ -37,22 +37,22 @@ using Application = UnityEngine.Application;
 
 namespace JEngine.Editor
 {
-	public class ProtoGenEditor : EditorWindow
+	public class Proto2CSEditor : EditorWindow
 	{
-		private static ProtoGenEditor win;
+		private static Proto2CSEditor win;
 
-		[MenuItem("JEngine/Protobuf/Generate Proto2cs")]
+		[MenuItem("JEngine/Protobuf/Proto2CS/Generate")]
 		public static void BuildAssetBundle()
 		{
-			win = GetWindow<ProtoGenEditor>("Proto2CS Generator");
-			win.folder = EditorUtility.OpenFolderPanel("Select proto files destination 请选择proto文件路径",
+			win = GetWindow<Proto2CSEditor>("Proto2CS Generator");
+			win.folder = EditorUtility.OpenFolderPanel("Select proto files directory 请选择proto文件路径",
 				Application.dataPath + "/Dependencies/Protobuf/ProtoFiles", "");
 			win.minSize = new Vector2(500, 500);
 			win.Show();
 		}
 
 
-		[MenuItem("JEngine/Protobuf/View Generated Files")]
+		[MenuItem("JEngine/Protobuf/Proto2CS/View Files")]
 		private static void ViewDataPath()
 		{
 			if (Directory.Exists(Application.dataPath + "/../HotUpdateScripts/Proto2cs"))

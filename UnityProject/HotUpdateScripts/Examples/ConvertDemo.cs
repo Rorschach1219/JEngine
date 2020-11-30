@@ -1,5 +1,5 @@
 ﻿//
-// Program.cs
+// ConvertDemo.cs
 //
 // Author:
 //       JasonXuDeveloper（傑） <jasonxudeveloper@gmail.com>
@@ -23,17 +23,36 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+using System;
+using System.Collections.Generic;
 using JEngine.Core;
-using JEngine.AntiCheat;
-using JEngine.Examples;
-
-namespace HotUpdateScripts
+namespace JEngine.Examples
 {
-    public static class Program
-    {
-        public static void RunGame()
-        {
+    public interface IDemo { }
 
+    public class OtherClass { }
+
+    public class Demo1 : JBehaviour, IDemo { }
+
+    public class Demo2 : OtherClass, IDemo { }
+
+    public class ConvertDemo : JBehaviour
+    {
+        public override void Init()
+        {
+            List<IDemo> list = new List<IDemo>(0);
+
+            var go = new UnityEngine.GameObject("demo1");
+            go.transform.SetParent(UnityEngine.GameObject.Find("ConvertDemo").transform);
+
+            Demo1 d1 = go.CreateJBehaviour<Demo1>();
+            Demo2 d2 = new Demo2();
+
+            list.Add(d1);
+            list.Add(d2);
+
+
+            Log.Print($"[ConvertDemo] list 有{list.Count}个元素");
         }
     }
 }

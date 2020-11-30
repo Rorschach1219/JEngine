@@ -48,6 +48,7 @@
     <Compile Include="JEngine\Core\JUI.cs" />
     <Compile Include="Examples\SafeData.cs" />
     <Compile Include="JEngine\Core\JPrefab.cs" />
+    <Compile Include="Examples\ConvertDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine.UIModule">
@@ -108,6 +109,9 @@
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>..\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Malee.ReorderableList">
+      <HintPath>..\Library\ScriptAssemblies\Malee.ReorderableList.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
